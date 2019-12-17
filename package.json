@@ -1,19 +1,24 @@
 {
-  "name": "@mariosant/cn",
-  "version": "0.0.1",
-  "description": "Easy class names handling.",
-  "main": "src/index.js",
-  "module": "src/index.js",
-  "scripts": {
-    "start": "echo 'Nothing here yet, sorry'",
-    "test": "jest"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/cli": "^7",
-    "@babel/core": "^7",
-    "@babel/preset-env": "^7",
-    "jest": "^24"
-  },
-  "keywords": ["classNames"]
+	"name": "@mariosant/cn",
+	"version": "0.0.1",
+	"description": "Easy class names handling.",
+	"main": "src/index.js",
+	"module": "src/index.js",
+	"scripts": {
+		"start": "echo 'Nothing here yet, sorry'",
+		"test": "jest",
+		"lint": "xo"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@babel/cli": "^7",
+		"@babel/core": "^7",
+		"@babel/preset-env": "^7",
+		"jest": "^24"
+	},
+	"keywords": ["classNames"],
+	"xo": {
+		"envs": ["jest", "browser"],
+		"prettier": true
+	}
 }
