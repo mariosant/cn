@@ -1,9 +1,12 @@
 {
-	"name": "@mariosant/cn",
+	"name": "mariosant-cn",
 	"version": "0.0.1",
-	"description": "Easy class names handling.",
+	"description": "",
 	"main": "src/index.js",
 	"module": "src/index.js",
+	"config": {
+		"access": "public"
+	},
 	"scripts": {
 		"start": "echo 'Nothing here yet, sorry'",
 		"test": "jest",
@@ -18,7 +21,7 @@
 		"jest": "^24",
 		"xo": "latest"
 	},
-	"keywords": ["classNames"],
+	"keywords": [],
 	"xo": {
 		"envs": ["jest", "browser"],
 		"prettier": true
