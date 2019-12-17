@@ -1,4 +1,4 @@
-import className from './index';
+import className from '.';
 
 test('outputs single class', () => {
 	expect(className('test')).toEqual('test');
