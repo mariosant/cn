@@ -1,4 +1,4 @@
-import className from '.';
+import className from '../src';
 
 test('outputs single class', () => {
 	expect(className('test')).toEqual('test');
@@ -10,9 +10,7 @@ test('outputs multiple classes', () => {
 
 test('works with conditions', () => {
 	expect(className([true, 'works', 'does not work'])).toEqual('works');
-	expect(className([false, 'works', 'does not work'])).toEqual(
-		'does not work'
-	);
+	expect(className([false, 'works', 'does not work'])).toEqual('does not work');
 });
 
 test('a mixed example', () => {
