@@ -3,7 +3,6 @@
 > Easy class names handling!
 
 [![NPM version](https://img.shields.io/npm/v/@mariosant/cn.svg)](https://www.npmjs.com/package/@mariosant/cn)
-[![CircleCI](https://circleci.com/gh/mariosant/cn/tree/master.svg?style=svg)](https://circleci.com/gh/mariosant/cn/tree/master)
 
 Cn is a simple utility to help you manage class names in the modern app development ecosystem.
 
@@ -37,7 +36,7 @@ const SomeComponent = () => <Button className={cn('btn', [isActive, 'active', 'i
 
 ## Development
 
-Easy enough! No build required.
+Easy enough!
 
 ```bash
 $ yarn install  # to install dependencies
