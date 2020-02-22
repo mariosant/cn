@@ -31,7 +31,17 @@ Using cn is pretty simple. It is inspired by the well known [Classnames](https:/
 import cn from '@mariosant/cn';
 
 const isActive = true;
-const SomeComponent = () => <Button className={cn('btn', [isActive, 'active', 'inactive'])} .../>
+const SomeComponent = () => <Button className={cn('btn', [isActive, 'active'])} .../> // classnames would be 'btn active'
+```
+
+Why the tuple syntax, you may ask. Well, tuple allows to pass an alternative classname, optionally.
+Consider the following:
+
+```javascript
+import cn from '@mariosant/cn';
+
+const isActive = false;
+const SomeComponent = () => <Button className={cn('btn', [isActive, 'active', 'inactive'])} .../> // classnames would be 'btn inactive'
 ```
 
 ## Development

@@ -1,6 +1,6 @@
-type Tuple = [boolean, string, string];
+type Tuple = [boolean, string, string?];
 
-const handleTuple = ([conditional, yeap, nope]: Tuple) =>
+const handleTuple = ([conditional, yeap, nope = '']: Tuple) =>
 	conditional ? yeap : nope;
 
 const handleString = (c: string) => c;
