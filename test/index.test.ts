@@ -1,25 +1,28 @@
-import className from '../src';
+import cn from '../src';
 
 test('outputs single class', () => {
-	expect(className('test')).toEqual('test');
+	expect(cn('test')).toEqual('test');
 });
 
 test('outputs multiple classes', () => {
-	expect(className('test', 'work')).toEqual('test work');
+	expect(cn('test', 'work')).toEqual('test work');
 });
 
 test('works with simple conditions', () => {
-	expect(className([true, 'works'])).toEqual('works');
-	expect(className([false, 'works'])).toEqual('');
+	expect(cn([true, 'works'])).toEqual('works');
+	expect(cn([false, 'works'])).toEqual('');
 });
 
 test('works with conditions', () => {
-	expect(className([true, 'works', 'does not work'])).toEqual('works');
-	expect(className([false, 'works', 'does not work'])).toEqual('does not work');
+	expect(cn([true, 'works', 'does not work'])).toEqual('works');
+	expect(cn([false, 'works', 'does not work'])).toEqual('does not work');
+});
+
+test('deduplicates class names', () => {
+	expect(cn('btn', 'btn', 'btn')).toEqual('btn');
+	expect(cn('btn', 'active', 'btn', 'btn')).toEqual('btn active');
 });
 
 test('a mixed example', () => {
-	expect(className('a', 'b', [true, 'works', 'does not work'])).toEqual(
-		'a b works'
-	);
+	expect(cn('a', 'b', [true, 'works', 'does not work'])).toEqual('a b works');
 });
